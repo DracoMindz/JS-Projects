@@ -1,0 +1,118 @@
+body {
+  background-color: #999;
+  background-image: url("./MoreLessAssets/pexels-fwstudio-131634.jpeg");
+  background-repeat: repeat;
+}
+#mainContent {
+  background-image: url("./MoreLessAssets/cardTableRich wCards.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  padding: 2px;
+  width: 1400px;
+  height: 770px;
+  position: absolute;
+  overflow: hidden;
+}
+/* setting up the cards. Need a card place, card front, card back*/
+.card {
+  position: absolute;
+  border: 4px solid #444;
+  border-radius: 10px;
+  object-fit: none;
+  object-position: 0 0;
+  width: 155px;
+  height: 248px;
+  margin-left: 2em;
+  margin-top: 2em;
+  background-color: black;
+  visibility:  hidden;
+}
+
+@font-face{
+  font-family: 'Knucklehead-Free';
+  src: url('./MoreLessAssets/Knucklehead-Free c2.otf');
+}
+.score {
+  position: absolute;
+  width: 120px;
+  height: 45px;
+}
+p {
+  font-family: "Garamond", "Georgia", serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-style: oblique;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 2px #888;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  font-weight:normal;
+}
+h1 {
+  font-family: "Knucklehead-Free", serif;
+  color: black;
+  margin: 0;
+  padding: 10px;
+  font-style: oblique;
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 2px #999;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  font-weight:normal;
+}
+h2 {
+  font-family: "Knucklehead-Free", serif;
+  color: black;
+  margin: 0;
+  padding: 10px;
+  font-style: oblique;
+  font-size: 3.3em;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 2px #999;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 45px;
+  font-weight:normal;
+}
+/* setting up the buttons: getting the size, shape, location to match the Ux (design)*/
+.button, .button-small, .button-xSmall{
+  border: none;
+  position: absolute;
+  width: 350px;
+  height:52px;
+  background-color: transparent;
+  color: black;
+  border: 0px solid #555555;
+  font-size: 2em;
+  background-repeat:no-repeat;
+  outline: none;
+  cursor: pointer;
+   -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  overflow: hidden;
+
+}
+.button-small {
+  width: 205px;
+  height:55px;
+}
+.button-xSmall{
+  width: 180px;
+  height: 45px;
+}
+/* adding shadow to the buttons when mouse hovers: 3dish*/
+.button-small:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button-xSmall:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
